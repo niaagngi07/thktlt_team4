@@ -27,7 +27,7 @@ void swap(db *a, db *b){
 
 void minPhu(db a[][100], int n){
     db sum=0;
-    for (int i=0; i<n-1; i++){
+    for (int i=0; i<n; i++){
         int min=0;
         for (int j=1; j<n; j++){
             if (a[i][j]<a[i][min]) min=j;
@@ -35,7 +35,7 @@ void minPhu(db a[][100], int n){
         int k= n-i-1;
         swap (&a[i][min], &a[i][k]);
         sum += a[i][k];
-    } printf ("%lf", sum);
+    } printf ("%lf\n", sum);
 }
 
 
@@ -46,7 +46,7 @@ int main(){
     nhap(a,n);
     printf ("Mang A co gia tri: \n");
     in(a,n);
-    printf ("Tong phan tu nho nhat tren duong cheo phu\n");
+    printf ("Tong phan tu nho nhat tren duong cheo phu: ");
     minPhu(a,n);
     printf ("Mang A sau khi sap xep\n");
     in(a,n);
