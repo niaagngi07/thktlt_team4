@@ -35,7 +35,7 @@ void minPhu(db a[][100], int n){
         int k= n-i-1;
         swap (&a[i][min], &a[i][k]);
         sum += a[i][k];
-    } printf ("%lf\n", sum);
+    } printf ("%g\n", sum);
 }
 
 
@@ -51,3 +51,4 @@ int main(){
     printf ("Mang A sau khi sap xep\n");
     in(a,n);
 }
+
