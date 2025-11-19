@@ -1,0 +1,18 @@
+void coso(int a, int cs){
+	char c[] = {
+		'0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+		'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'
+	};
+	
+	char res[100];
+	int len=0;
+	
+	while (a){
+		int i=a%cs;	
+		res[len++] = c[i];
+		a/= cs;
+	}
+	for (int i=len -1; i>=0; i--) {
+		printf("%c", res[i]);
+	}
+}
