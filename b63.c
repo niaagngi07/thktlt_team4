@@ -22,10 +22,11 @@ void chinhphuong(db a[], int n){
                 int vl= (int)a[i];
                 int tmp=(int)sqrt(vl);
                 if (pow(tmp,2)==vl){
+                    printf ("%d ", vl);
                     sum+=vl;
             }
         }
-    } printf ("%d", sum);
+    } printf ("\nTong cac so chinh phuong: %d", sum);
 }
 int main(){
     int n; scanf ("%d", &n);
@@ -33,6 +34,6 @@ int main(){
     nhap(a,n);
     printf ("Mang A la:\n");
     in(a,n);
-    printf ("\nCac so chinh phuong co trong mang A la: ");
+    printf ("\n");
     chinhphuong(a,n);
 }
