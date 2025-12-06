@@ -29,10 +29,9 @@ db minc(db x, db y, db z){
 int main(){
     db x, y, z;
     scanf ("%lf %lf %lf", &x, &y, &z);
-    printf ("%lf %lf\n", max3(x,y,z), min3(x,y,z));
-    printf ("%lf\n", minb(x,y,z));
-    printf ("%lf\n", minc(x,y,z)*minc(x,y,z) +1);
+    printf ("%g %g\n", max3(x,y,z), min3(x,y,z));
+    printf ("%g\n", minb(x,y,z));
+    printf ("%g\n", minc(x,y,z)*minc(x,y,z) +1);
 }
-
 
 
